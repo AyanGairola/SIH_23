@@ -27,6 +27,7 @@ let changeForm = (e) => {
     bContainer.classList.toggle("is-z200");
 }
 
+
 let mainF = (e) => {
     for (var i = 0; i < allButtons.length; i++)
         allButtons[i].addEventListener("click", getButtons );
