@@ -63,8 +63,8 @@
 }
 
 .buy-item-image {
-  background: url("../images/buy-item1.png");
+  /* background: url("../images/buy-item1.png"); */
   width: 15vw;
   height: 20vh;
-  background-size: 10vh;
+  background-size: 28vh;
 }
