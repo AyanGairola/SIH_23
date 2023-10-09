@@ -2,31 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>buy</title>
+    <title>sell</title>
     <link rel="stylesheet" href="../static/styles/sell.css">
 </head>
 <body>
 <div class="header">
     <div class="navbar">
         <div class="logo">
-            <a href="{{ url_for('index_page') }}" class="imglink"><img src="../static/images/logo.jpg" alt="EcoTech Reclaim" height="65px" width="auto" ></a>
+            <a href="index.html" class="imglink"
+            ><img
+                    src="../static/images/logo.jpg"
+                    alt="EcoTech Reclaim"
+                    height="65px"
+                    width="auto"
+            /></a>
         </div>
         <div class="items">
             <ul>
-                <li><a href=".{{ url_for('aboutus_page') }}">About Us</a></li>
+                <!-- ADDED HOME -->
+                <li><a href="index.html">Home</a></li>
+                <!-- HOME ENDED -->
+                <li><a href="aboutus.html">About Us</a></li>
                 <div class="dropdown">
                     <button class="link dropbtn">Services</button>
                     <div class="dropdown-content">
                         <a href="buy.html">Buy</a>
                         <a href="sell.html">Sell</a>
                         <a href="map.html">Facility Locator</a>
-
+                        <a href="donate.html">Donate</a>
                     </div>
                 </div>
-                <li><a href="{{ url_for('learningoc_page') }}">Learning Outcome</a></li>
-                <li><a href="{{ url_for('contactus_page') }}">Contact Us</a></li>
+                <div class="dropdown">
+                    <a href="learningoc.html"><button class="link dropbtn">
+                        Learning Outcome</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="learningoc.html#about-us-1">Education</a>
+                        <a href="learningoc.html#loc-2">Classification of E-Waste</a>
+                        <a href="learningoc.html#loc-3">Statistics</a>
+                        <a href="learningoc.html#loc-6">Blogs</a>
+                    </div>
+                </div>
+                <li><a href="contactUs.html">Contact Us</a></li>
                 <div class="btn">
-                    <button class="join-btn"><a href="{{ url_for('login_page') }}">Join Our Community</a></li></button>
+                    <button class="join-btn">
+                        <li><a href="login.html">Join Our Community</a></li>
+                    </button>
                 </div>
             </ul>
         </div>
